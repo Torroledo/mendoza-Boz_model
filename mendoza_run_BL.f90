@@ -53,8 +53,8 @@ program mendoza_run
     
     real :: BB(NB), RR = 0.027
         
-!  	write ( *, '(a,i8)' ) '  The number of processors available = ', omp_get_num_procs ( )
-!  	write ( *, '(a,i8)' ) '  The number of threads available    = ', omp_get_max_threads ( ) 
+  	write ( *, '(a,i8)' ) '  The number of processors available = ', omp_get_num_procs ( )
+  	write ( *, '(a,i8)' ) '  The number of threads available    = ', omp_get_max_threads ( ) 
   	
     write(*,*) 'Model :'  
     
@@ -99,7 +99,6 @@ program mendoza_run
     
 	call cpu_time(start)
 	
-!	!$omp parallel do
 	do l=1,size(FFHHHH)
 		
 		write(*,*) l,' iterations of ', size(FFHHHH)

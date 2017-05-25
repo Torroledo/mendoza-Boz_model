@@ -139,7 +139,6 @@ subroutine mendoza(bp,q,er,Prob,Zprob,Z,BB,kappa,    &
 			!*****************************************************
 		end do 
 		end do 
-		
 		if (iter==0) then
 			!write(*,*) 'emu', iter	
 			!call print_matrix(emu,NB,NTOTAL)
@@ -244,7 +243,7 @@ subroutine mendoza(bp,q,er,Prob,Zprob,Z,BB,kappa,    &
     	!====================================================================
    	end do	
 	write (*,*) ' Done! '
-    !write (*,*) iter, '     ', d2
+    write (*,*) iter, '     ', d2
 	
 end subroutine mendoza
 end module mendoza_tools
